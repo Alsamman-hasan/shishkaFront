@@ -1,0 +1,88 @@
+.Wrapper{
+  background: var(--white);
+  min-height: 5rem;
+  position: relative;
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 10px;
+}
+
+.HeaderSecondLine {
+  display: grid;
+  grid-template-columns: auto auto minmax(20rem, 38rem) 150px;
+  align-items: center;
+  grid-gap: 1.25rem;
+  min-height: 5rem;
+}
+
+.IconsWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: flex-end;
+}
+
+.link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+
+.active {
+  &>a, svg {
+    fill: var(--main-color);
+  }
+}
+.btnIcons {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 50px;
+  height:50px;
+  padding: 0 !important;
+
+
+  &:hover {
+    &>a, svg {
+      fill: var(--main-color);
+    }
+  }
+
+  &:disabled {
+    &>a, svg {
+      fill: var(--grey);
+      color: var(--grey);
+    }
+  }
+}
+
+
+@media screen and (width <= 1024px) {
+
+  .HeaderSecondLine {
+    max-width: 100%;
+    grid-template-columns: auto auto auto auto ;
+  }
+}
+
+@media screen and (width <= 768px) {
+
+  .HeaderSecondLine {
+    grid-template-columns: auto auto;
+  }
+
+  .Wrapper{
+    height: 2.75rem !important;
+    min-height: 2.5rem !important;
+  }
+
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  .HeaderSecondLine {
+    height: 2.75rem !important;
+    min-height: 2.5rem !important;
+  }
+
+  .btnIcons {
+    height: 2.5rem !important;
+    padding: 7px;
+
+  }
+}

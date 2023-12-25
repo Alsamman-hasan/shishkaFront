@@ -1,0 +1,137 @@
+
+.menuBlock {
+
+  .MuiMenu-paper {
+    width: 1200px;
+    height: 680px;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 10px;
+  }
+}
+
+.menuContainer {
+  display: grid;
+  grid-template-columns: 18.44rem auto;
+  gap: 1.25rem;
+}
+
+.menuMain {
+  max-height: 664px;
+  overflow-y: auto;
+
+  // padding-top: 0.75rem;
+  &::-webkit-scrollbar {
+    width: 8px;               
+  }
+
+  &::-webkit-scrollbar-track { 
+    width: 8px;
+    background: var(--light-grey);      
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--dark-grey);
+    border-radius: 20px;
+  }
+
+  .MuiMenuItem-root {
+    padding: 20px;
+  }
+}
+
+.menuMainItems {
+  background: var(--white);
+
+  hr{
+    margin: 0 32px 0 40px;
+    height: 2px;
+    opacity: 0.2;
+  }
+
+   .MuiMenuItem-root {
+      border-bottom: 1px solid var(--light-grey);
+      border-right: 1px solid var(--light-grey);
+    }
+
+  &:hover {
+
+    .MuiMenuItem-root {
+      background: var(--add-white) ;
+    }
+
+    .menuMainItem {
+      color: var(--main-color);
+    }
+  }
+}
+
+.menuMainItem {
+  color: #333;
+}
+
+.menuSubMain {
+  max-height: 664px;
+  overflow-y: auto;
+  padding-top: 2rem;
+
+  &::-webkit-scrollbar {
+    width: 7px;               
+  }
+
+  &::-webkit-scrollbar-track { 
+    width: 8px;
+    background: var(--light-grey );      
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--dark-grey );
+    border-radius: 20px;
+  }
+}
+
+.menuSubMainGroup{
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.menuSubMainItems {
+  box-sizing: border-box;
+  display: grid;
+  margin-bottom: 2rem;
+
+  .MuiMenuItem-root {
+    padding: 8px 0;
+  }
+}
+
+.menuSubMainItemWrapper:hover {
+
+  .MuiMenuItem-root {
+    background: var(--white-dark)!important ;
+  }
+
+  .menuSubMainItem {
+    color: var(--main-color)
+  }
+}
+
+.menuSubMainItem{
+  color: #333;
+}
+
+
+@media screen and (width <= 960px) {
+
+  .menuSubMainGroup{
+    column-count: 2;
+
+  }
+}
+
+@media screen and (width <= 960px) {
+
+  .menuSubMainGroup{
+    column-count: 1;
+  }
+}

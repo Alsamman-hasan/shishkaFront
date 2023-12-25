@@ -1,0 +1,23 @@
+.Header {
+  z-index: 102;
+  width: 100%;
+  height: var(--header-height);
+}
+
+.Wrapper {
+  position: fixed;
+  max-height: var(--header-height);
+  
+}
+
+.isScroll {
+  box-shadow: rgb(26 26 26 / 20%) 0 2px 6px;
+}
+
+@media screen and (width <= 768px) {
+
+  .Header {
+    width: 100%;
+    height: var(--header-height768);
+  }
+}

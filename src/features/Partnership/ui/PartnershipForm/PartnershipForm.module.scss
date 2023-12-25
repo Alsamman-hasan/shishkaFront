@@ -1,0 +1,45 @@
+.PartnershipForm {
+  background: #F9F9FB;
+  border-radius: 12px;
+  padding: 3.5rem 5.875rem 3.75rem;
+}
+
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  grid-template-rows: 1fr;
+  width: 100%;
+  padding: 1.5rem 0 2.375rem;
+}
+
+.left {
+  display: grid;
+  gap: 1rem;
+}
+
+.right {
+  display: grid;
+  gap: 1rem;
+}
+
+.btn {
+  width: 100%;
+  min-width: 17.8125rem;
+}
+
+@media screen and (width <=768px) {
+
+  .PartnershipForm {
+    padding: 2.5rem 0.75rem 3.75rem;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+
+}

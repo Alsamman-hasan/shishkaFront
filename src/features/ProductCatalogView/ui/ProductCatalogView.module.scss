@@ -1,0 +1,11 @@
+.btn{
+  padding: 0 !important ;
+
+}
+
+.active {
+
+  &>svg {
+    fill: var(--main-color) !important;
+  }
+}

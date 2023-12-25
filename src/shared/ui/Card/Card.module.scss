@@ -1,0 +1,13 @@
+.Card {
+  border: 1px solid var(--light-grey);
+  padding: 0.75rem;
+  height: 32.75rem;
+}
+
+
+@media screen and (width <= 426px) {
+
+  .Card {
+    height: 29.5625rem;
+  }
+}

@@ -1,0 +1,87 @@
+.ProfileTabs {
+  max-width: 17.8125rem;
+}
+
+.userInfo {
+  width: 17.8125rem;
+  height: 5.375rem;
+  padding: 1.25rem;
+  border: 1px solid var(--light-grey);
+}
+
+.loading {
+  width: 17.8125rem;
+  height: 5.375rem;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  padding: 1.125rem 2rem;
+  border-color: var(--light-grey) !important;
+  color: var(--black)  !important;
+
+  &>svg {
+    fill: var(--black);
+  }
+
+  &:not(:disabled):hover{
+    background: var(--white);
+  }
+
+  &:hover{
+  background: var(--white) !important;
+  color: var(--main-color) !important;
+
+    &>svg {
+      fill: var(--main-color);
+    }
+  }
+
+}
+
+.btnActive {
+
+  &>svg {
+    fill: var(--white);
+  }
+  background: var(--main-color) !important;
+  color: var(--white) !important;
+
+  &:not(:disabled):hover{
+    background: var(--main-color) !important;
+  }
+
+  &:hover{
+    background: var(--main-color) !important;
+    color: var(--white) !important;
+
+      &>svg {
+        fill: var(--white);
+      }
+  }
+}
+
+@media screen and (width <= 768px) {
+
+  .btnTabsWrapper {
+    flex-direction: row;
+  }
+
+  .ProfileTabs {
+    max-width: 100%;
+  }
+
+  .userInfo, .loading {
+    width: 100%;
+  }
+
+}
+
+@media screen and (width <= 425px) {
+
+  .btnTabsWrapper {
+    flex-direction: column !important;
+  }
+
+}

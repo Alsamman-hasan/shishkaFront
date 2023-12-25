@@ -1,0 +1,98 @@
+.ProductsOfWeek {
+  margin-bottom: 7.5rem;
+
+  &__MainSlider {
+    max-width: 100%;
+    margin-top: 1.5rem;
+    position: relative;
+    height: 100%;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+
+    [class*="slick-list"] {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slick-track {
+      overflow: hidden;
+      height: 100%;
+      display: inline-flex;
+      min-height: 33.75rem;
+    }
+
+    [class*="slick-prev"] {
+      left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    [class*="slick-next"] {
+      right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    padding: 0 !important;
+    border: none !important;
+    position: relative;
+
+    &>img {
+      height: 100%;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    width: 100%;
+  }
+
+}
+
+.Left {
+  cursor: pointer;
+  fill: var(--main-color);
+  position: absolute;
+  top: -3.375rem;
+  right: 4.125rem;
+}
+
+.Right {
+  fill: var(--main-color);
+  cursor: pointer;
+  position: absolute;
+  top: -3.375rem;
+  right: 1rem;
+}
+
+@media screen and (width <=425px) {
+
+  .ProductsOfWeek {
+    margin-bottom: 0rem;
+
+
+    &__card {
+      display: none;
+    }
+
+    &__MainSlider {
+
+      .slick-track {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .slick-slide {
+        width: auto !important;
+      }
+    }
+  }
+}

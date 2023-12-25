@@ -1,0 +1,152 @@
+.BlogPage {
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.containerBlog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.isLoading {
+  width: 100%;
+  min-height: 50vh;
+}
+
+
+.blog {
+  cursor: pointer;
+  box-shadow: 0px 2px 8px rgba(26, 26, 53, 0.12);
+  border-radius: 12px;
+  width: 36.875rem;
+  padding: 0px 0px 20px;
+  height: 24.0625rem;
+}
+
+.blog:hover {
+  box-shadow: 0px 8px 12px rgba(26, 26, 53, 0.2);
+}
+
+.BlogInfo {
+  padding: 0 12px 20px 12px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+
+  &>img {
+    object-fit: contain;    
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.H3 {
+  text-align: start;
+}
+
+.P2 {
+  text-align: start;
+}
+
+.pagination {
+  display: flex;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+@media screen and (width <=1280px) {
+  .blog {
+    border-radius: 24px;
+    width: 70rem;
+    padding: 0px 0px 40px;
+    height: 38rem;
+  }
+
+  .BlogInfo {
+    padding: 0 12px 20px 12px;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+  
+    &>img {
+      object-fit: contain;    
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media screen and (width <=768px) {
+
+  .containerBlog {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog {
+    height: 24rem;
+    width: 38rem;
+    padding: -2rem 0 0;
+  }
+
+  .H3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (width <=425px) {
+
+  .BlogsWrapper {
+    gap: 1.5rem !important
+  }
+
+  .containerBlog {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog {
+    height: 19.5rem;
+    width: 21rem;
+    padding: -3rem 0 0;
+  }
+
+  .H1 {
+    font-size: 22px
+  }
+
+  .H3 {
+    font-size: 16px !important;
+  }
+
+}
+
+@media screen and (width <=375px) {
+
+  .containerBlog {
+    flex-direction: column;
+  }
+
+  .blog {
+    width: 16.25rem;
+    height: 19rem;
+    margin: 0 1rem;
+  }
+
+}
+
+@media screen and (width <=320px) {
+
+  .containerBlog {
+    flex-direction: column;
+
+  }
+
+  .blog {
+    width: 16.25rem;
+    height: 19rem;
+  }
+
+}

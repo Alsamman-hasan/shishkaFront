@@ -1,0 +1,158 @@
+.firstContainer {
+  padding: 1rem;
+  min-width: 35.625rem;
+  height: 28.125rem;
+  border: 1px solid var(--light-grey);
+  position: relative;
+}
+
+
+.tagFavorite {
+  position: absolute;
+  width: 93%;
+  z-index: 3;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.isFavorite .animation  {
+  fill: none;
+  stroke: var(--main-color);
+  animation: rotateIcons 5s forwards;
+}
+
+.animation {
+  stroke: none;
+  stroke-dashoffset: 300;
+  stroke-dasharray: 300;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+
+  &>img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.decrement, .increment {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decrement {
+  min-width: 3rem;
+  height: 3rem;
+  border-right: 1px solid var(--light-grey)
+}
+
+.increment  {
+  min-width: 3rem;
+  height: 3rem;
+  border-left: 1px solid var(--light-grey);
+}
+
+.disabled {
+  fill: #B3B3B3;
+}
+.countWrapper {
+  width: 10.25rem;
+  border: 1px solid var(--light-grey);
+}
+
+.number input {
+  max-width: 7.375rem;
+  min-height: 3rem;
+  padding: 1rem  !important;
+  text-align: end;
+  border: none !important;
+}
+
+
+.price {
+  font: var(--Numeric1);
+  color: var(--black);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.oldPrice {
+  font: var(--Numeric3);
+  color: var(--dark-grey);
+  font-weight: 400;
+  text-decoration-line: line-through;
+}
+
+.userAttention {
+  margin-top: 1rem;
+}
+
+
+@media screen and (width <= 900px) {
+
+  .ProductDetailsInfo {
+    flex-direction: column;
+  }
+
+  .firstContainer {
+    min-width: 100%;
+  }
+
+  .imgWrapper {
+    max-width: 100%;
+    max-height: 100%;
+
+    &>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .actions {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+
+    &>button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (width <= 425px) {
+  .countWrapper {
+    width: 100%;
+  }
+
+}
+
+
+@keyframes rotateIcons {
+
+  0% {
+    stroke-dashoffset: 300;
+  }
+
+  50% {
+    fill: var(--main-color);
+  }
+
+  70% {
+    stroke: none;
+    fill: var(--main-color);
+  }
+
+  100% {
+    fill: var(--main-color);
+    stroke: none;
+    stroke-dashoffset: 0;
+  }
+}

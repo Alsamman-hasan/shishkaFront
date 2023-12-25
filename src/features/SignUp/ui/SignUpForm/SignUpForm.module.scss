@@ -1,0 +1,17 @@
+.SignUpForm {
+  max-width: 50rem;
+  &>div >p {
+    text-align: center;
+  }
+}
+.btn {
+  width: 100%;
+  max-width: 24.125rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .formWrapper{
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,49 @@
+.breadcrumb {
+  padding: 1.25rem 0;
+
+  .MuiBreadcrumbs-li {
+    border-radius: 8px ;
+    padding: 0.25rem 0;
+    &:hover {
+      background: var(--white-5);
+    }
+  }
+
+  .MuiBreadcrumbs-separator {
+    margin-left: 1rem ;
+    margin-right: 1rem ;
+    padding: 0.25rem 0;
+    color: var(--dark-grey);
+  }
+
+  &__lastLink {
+    cursor: pointer;
+    color: var(--main-color);
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+     &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__Links {
+    color: var(--dark-grey) !important;
+
+    &:hover {
+      color: var(--main-color) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumb {
+    padding: 0;
+
+    .MuiBreadcrumbs-separator {
+      padding: 0;
+    }
+  }
+}

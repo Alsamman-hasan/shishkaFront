@@ -1,0 +1,28 @@
+.header {
+  cursor: pointer;
+}
+
+.collapse {
+  margin-bottom: 1rem;
+}
+
+.CatalogProdFilterPrice {
+  border-bottom: 1px solid var(--light-grey);
+
+  &>hr{
+    width: 100%;
+  }
+}
+
+.dec {
+  min-width: 35px;
+  height: 35px !important;
+}
+
+.input {
+  gap: 0.1rem !important;
+
+  &>label p{
+    color: var(--grey) !important;
+  }
+}

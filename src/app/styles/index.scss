@@ -1,0 +1,19 @@
+@import "reset";
+@import "variables/global.scss";
+@import "themes/normal.scss";
+
+
+.app {
+  background: var(--white);
+  min-height: 100vh;
+  font: var(--H3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.snackbar {
+  #notistack-snackbar {
+    font: var(--Description);
+  }
+}

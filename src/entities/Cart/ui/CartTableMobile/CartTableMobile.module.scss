@@ -1,0 +1,50 @@
+.CartTableMobile {
+  width: 100%;
+}
+
+.cart {
+  border-bottom: 1px solid var(--light-grey);
+}
+.img {
+  min-width: 80px;
+  min-height: 80px;
+  display: flex;
+  border: 1px solid var(--light-grey);
+  justify-content: center;
+  align-items: center;
+  &>img {
+    object-fit: contain;
+    max-width: 74px;
+    max-height: 72px;
+  }
+}
+
+.IncDec {
+  min-height: 44px;
+}
+
+.title{
+  width: 60%;  
+  text-align: center;
+}
+
+.actionWrapper {
+  margin-bottom: 12px;
+}
+.actions {
+  cursor: pointer;
+  color: var(--main-color );
+}
+
+.up, .down {
+  cursor: pointer;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dis {
+  fill: #B3B3B3;
+}

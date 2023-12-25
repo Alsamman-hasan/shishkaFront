@@ -1,0 +1,17 @@
+.CustomTabs {
+  display: flex;
+}
+
+.btn {
+  font: var(--P2);
+  cursor: pointer;
+  padding: 0.8125rem 2rem 0.75rem 2rem;
+  text-align: center;
+  border: 1px solid var(--light-grey);
+  margin-bottom: 12px;
+}
+
+.active {
+  color: var(--white);
+  background: var(--main-green, #00845B);
+}

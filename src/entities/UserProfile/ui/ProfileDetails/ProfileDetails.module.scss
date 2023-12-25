@@ -1,0 +1,58 @@
+.ProfileDetails {
+  border: 1px solid var(--light-grey);
+  padding: 2.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.loading {
+  height: 65vh;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  width: 11.875rem;
+  height: 2.75rem;
+}
+
+.ForgotPassword {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+
+@media screen and (width <= 880px) {
+
+   .ProfileDetails {
+    border: none;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .formWrapper {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (width <= 768px) {
+
+  .formWrapper, .btnWrapper{
+    flex-direction: row !important;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 425px) {
+
+  .formWrapper, .btnWrapper{
+    flex-direction: column !important;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

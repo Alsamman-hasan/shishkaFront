@@ -1,0 +1,35 @@
+.UserProfile {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+
+  //display: grid;
+  //grid-template-columns: 17.9rem 1fr;
+}
+
+.tab {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  gap: 1.25rem;
+ 
+}
+
+.tabs {
+
+  .css-lfwcke-MuiTabs-flexContain {
+    gap: 10px !important;
+  }
+}
+
+
+
+
+@media screen and (width <= 768px) {
+
+  .UserProfile {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}

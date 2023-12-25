@@ -1,0 +1,61 @@
+.SidebarUI {
+  width: 100%;
+  min-height: 568px;
+  inset: 0;
+  position: fixed;
+  z-index: 20;
+  opacity: 0;
+}
+
+.content {
+  position: relative;
+  transition: top 0.7s;
+  width: 100%;
+  border-radius: 8px;
+  min-height: 568px;
+  background: var(--white);
+  padding: 1.5rem 0.75rem;
+  box-shadow: rgb(26 26 26 / 20%) 0 2px 6px;
+}
+
+.opened {
+  opacity: 1;
+
+  .content {
+    animation: openModal 0.7s;
+    z-index: 10000;
+    top: 87px;
+    display: flex;
+  }
+}
+
+.isClosing {
+
+  .content {
+    animation: closeModal 3s;
+    top: -1800px
+  }
+}
+
+
+@keyframes openModal {
+
+  from {
+    top: -1800px
+  }
+
+  to {
+    top: 87px;
+  }
+}
+
+@keyframes closeModal {
+
+  from {
+    top: 87px;
+  }
+
+  to {
+    top: -1800px
+  }
+}

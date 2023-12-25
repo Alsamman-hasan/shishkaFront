@@ -1,0 +1,49 @@
+.inputFilter {
+  width: 17.8125rem;
+}
+
+.Filter {
+  width: 17.8125rem;
+  height: 2.75rem;
+  outline: unset;
+  border-radius: 4px;
+  padding: 0.625rem 2.25rem 0.625rem 0;
+  font: var(--P3);
+  border: 1px solid var(--light-grey);
+
+  &>button {
+    height: 2.4rem;
+  }
+}
+
+@media screen and (width <= 1024px) {
+
+  .Filter, .sort{
+    width: 100% ;
+  }
+}
+
+@media screen and (width <= 768px) {
+
+}
+
+@media screen and (width <= 570px) {
+
+  .headerWrapper , .header{
+    width: 100%;
+    flex-direction: column !important;
+    justify-content: flex-start;
+  }
+
+  .headerWrapper {
+    gap: 1rem !important;
+  }
+}
+
+@media screen and (width <= 375px) {
+
+}
+
+@media screen and (width <= 320px) {
+
+}

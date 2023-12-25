@@ -1,0 +1,17 @@
+.SignInForm {
+  max-width: 25rem;
+
+  &>div >p {
+    text-align: center;
+  }
+}
+
+.btn {
+  width: 100%;
+  max-width: 24.125rem;
+}
+
+.ForgotPassword {
+  color: var(--main-color);
+  cursor: pointer;
+}

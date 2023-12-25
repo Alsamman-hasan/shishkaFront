@@ -1,0 +1,14 @@
+.btn {
+  width: 17.8125rem;
+}
+.CartContent {
+  margin-bottom: 8.5rem;
+}
+
+@media screen and (width <= 768px) {
+
+  .itemsView {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}

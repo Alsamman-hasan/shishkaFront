@@ -1,0 +1,19 @@
+.OrderSort {
+  width: 328px;
+}
+
+.sortTitle {
+  color: var(--grey);
+} 
+
+@media screen and (width <= 768px) {
+
+  .OrderSort {
+    width: 100%;
+  }
+
+  .sortWrapper {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+}

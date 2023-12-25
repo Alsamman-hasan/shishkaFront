@@ -1,0 +1,13 @@
+
+.btn {
+  width: 24.1875rem;
+}
+
+@media screen and (max-width: 425px) {
+  .inputsWrapper{
+    flex-direction: column !important;
+  }
+  .btn{
+    width: 100%;
+  }
+}

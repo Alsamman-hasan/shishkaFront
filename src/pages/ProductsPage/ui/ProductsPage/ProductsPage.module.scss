@@ -1,0 +1,37 @@
+
+.Wrapper {
+  position: relative;
+}
+
+.test {
+   //position: sticky;
+  top: 9rem;
+}
+
+@media screen and (width <= 1024px) {
+
+  .Wrapper {
+    flex-direction: column !important;
+  }
+
+  .test {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 768px) {
+
+}
+
+@media screen and (width <= 425px) {
+
+}
+
+@media screen and (width <= 375px) {
+
+}
+
+@media screen and (width <= 320px) {
+
+}

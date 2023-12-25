@@ -1,0 +1,75 @@
+.ListShops {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: 3.75rem;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.availability {
+  margin-bottom: 0.75rem;
+}
+
+.P3 {
+  color: var(--add-dark-grey, #666);
+}
+
+.divider {
+  border-bottom: 1px solid var(--light-grey);
+  width: 100%;
+  height: 0;
+}
+
+.btnShowMore {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start !important;
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.isShowMore {
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (width <= 768px) {
+
+  .containerList {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .left {
+
+    margin-right: 0rem;
+  }
+
+  .right {
+    display: none;
+  }
+
+}

@@ -1,0 +1,34 @@
+.YMap {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.btn {
+  margin-top: 0.75rem;
+}
+
+.desc {
+  color: var(--dark-grey);
+}
+
+.map {
+  max-width: 793px;
+  height: 440px;
+  border-radius: 8px;
+}
+
+@media screen and (width <= 768px) {
+
+  .mapWrapper{
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (width <= 425px) {
+
+  .YMap {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+ }

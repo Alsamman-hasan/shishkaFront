@@ -1,0 +1,103 @@
+.Feedback {
+  background: var(--add-white);
+  padding: 6.25rem 0;
+
+  &__MainSlider {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: 1.5rem;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+
+    [class*="slick-list"] { 
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+    }
+
+    .slick-track {
+      overflow: hidden;
+      height: 100%;
+      min-height: 210px;
+      width: 100%;
+      display: inline-flex;
+      gap: 1.25rem;
+    }
+
+    [class*="slick-prev"] {
+      left:0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    [class*="slick-next"] {
+      right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__dotsClass {
+    list-style: none;
+    display: flex !important;
+    gap: 0.25rem;
+    position: absolute;
+    bottom: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    [class*="slick-active"] {
+      cursor: pointer;
+      width: 1.5rem;
+      background: var(--dark-grey);
+      border-radius: 4px;
+    }
+  }
+
+  &__Indicator{
+    cursor: pointer;
+    width: 0.75rem;
+    height: 0.25rem;
+    background: var(--dark-grey);
+    opacity: 0.4;
+    border-radius: 4px;
+  }
+
+  &__info {
+    height: 12.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 8px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    background: var(--white);
+    overflow: hidden;
+  }
+
+  &__name {
+    color: var(--black);
+  }
+
+  &__time {
+    color: var(--grey);
+  }
+
+  &__desc {
+    color: var(--black);
+  }
+}
+
+@media screen and (width <= 425px) {
+
+  .Feedback {
+    background: var(--add-white);
+    padding: 3rem 0;
+   }
+   
+ }
+ 

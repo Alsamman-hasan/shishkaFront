@@ -1,0 +1,20 @@
+.SecoundFooter {
+  padding: 1.3125rem 0 0.8125rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.componyName{
+  color: var(--light-grey);
+}
+
+
+@media screen and (width <= 768px) {
+
+  .SecoundFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

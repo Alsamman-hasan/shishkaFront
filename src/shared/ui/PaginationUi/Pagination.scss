@@ -1,0 +1,23 @@
+.PaginationUi {
+
+  .MuiPaginationItem-root {
+    color: var(--black);
+    height: 28px;
+    min-width: 28px;
+
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+
+  .Mui-selected {
+    color: var(--white);
+    border: 1px solid var(--white-10);
+    border-radius: 8px;
+    background: var(--main-color) !important;
+  } 
+
+  .MuiPaginationItem-previousNext, .MuiPaginationItem-ellipsis {
+    border:none;
+  }
+}

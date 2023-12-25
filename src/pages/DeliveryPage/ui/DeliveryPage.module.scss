@@ -1,0 +1,83 @@
+.DeliveryPage {
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.containerDelivery {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 10rem;
+}
+
+.left {
+max-width: 36.875rem;
+justify-content: start;
+margin-bottom: 1rem;
+}
+
+.right {
+  margin-top: -5rem;
+}
+
+.isLoading {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+
+  &>img {
+    object-fit: contain;    
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.P1 {
+  text-align: start;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 0 0.75rem;
+}
+
+@media screen and (width <=1024px) {
+
+  .containerDelivery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (width <=768px) {
+
+  .H1 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .P1 {
+    font-size: 16px;
+  }
+
+  .containerDelivery {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (width <=375px) {
+
+  .P1 {
+    padding: 0;
+  }
+
+}

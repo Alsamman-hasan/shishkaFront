@@ -1,0 +1,103 @@
+.link {
+  z-index: 0 !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  font: inherit !important;
+}
+
+.CartTable {
+  width: 100%;
+}
+table { 
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  width:100%;
+  position:relative;
+
+  td,th{ 
+    padding-left:8px;
+  }
+
+  thead tr{ 
+    height:40px;
+    color: var(--grey);
+    font-size:16px;
+    border-bottom:1px solid #E3F1D5 ;
+  }
+  
+  tbody tr{
+    height:124px; 
+    border-bottom:1px solid #E3F1D5 ;
+  }
+  
+ 	td,th{ 
+    text-align:center;
+		&.first{ 
+      text-align:left;
+      width: 60%;
+     }
+	}
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--light-grey);
+  &>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.actions {
+  cursor: pointer;
+  color: var(--main-color );
+}
+
+.title {
+  width: 60%;
+}
+
+.count {
+  margin: 0 auto;
+  width: 93px;
+  height: 63px;
+  border: 1px solid var(--light-grey);   
+}
+
+.sellingPrice {
+  font: var(--Numeric4);
+  text-decoration-line: line-through;
+  color: var(--dark-grey);
+}
+
+.up {
+  cursor: pointer;
+  border-left: 1px solid var(--light-grey);
+  width: 2rem;
+  height: 2rem;
+}
+
+.down {
+  cursor: pointer;
+  border-bottom: 1px solid var(--light-grey);
+  border-right: 1px solid var(--light-grey);
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(180deg);
+}
+
+.dis {
+  fill: #B3B3B3;
+}
+
+@media screen and (width <= 550px) {
+
+  .sum {
+    display: none;
+  }
+}

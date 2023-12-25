@@ -1,0 +1,34 @@
+.Drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+}
+
+.opened {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 1000;
+
+    .content {
+        transform: translateY(0%);
+    }
+}
+
+.sheet {
+    z-index: 1000;
+    position: fixed;
+
+    // left: 2vw;
+    height: calc(100vh);
+
+    // height: 700px;
+    width: 100vw;
+    border-radius: 12px 12px 0;
+
+    // background: var(--white);
+    touch-action: none;
+
+    // padding: 15px;
+}

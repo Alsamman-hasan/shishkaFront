@@ -1,0 +1,23 @@
+
+.OrderTab {
+  width: 44.875rem;
+}
+
+@media screen and (width <= 768px) {
+  .OrderTab {
+    width: 100%;
+  }
+
+  .pTag {
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
+
+}
+
+@media screen and (width <= 425px) {
+  .tabs {
+    width: 100%;
+  }
+
+}

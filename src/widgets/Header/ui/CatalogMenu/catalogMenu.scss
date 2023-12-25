@@ -1,0 +1,15 @@
+
+.menuBtn {
+  height:2.75rem;
+  min-width: 12.625rem !important;
+  padding: 0;
+  gap: 11px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+
+  &>svg {
+    width: 20px;
+  }
+}

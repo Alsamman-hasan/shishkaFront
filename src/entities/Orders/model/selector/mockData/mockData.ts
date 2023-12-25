@@ -1,0 +1,51 @@
+export const ordersData = [
+  {
+    data: 'от 21.09.2021',
+    details: [],
+    id: 1,
+    order: 'Заказ №12441',
+    status: 'Завершен',
+  },
+  {
+    data: 'от 02.08.2021',
+    details: [],
+    id: 2,
+    order: 'Заказ №12439',
+    status: 'Текущий',
+  },
+  {
+    data: 'от 12.07.2021',
+    details: [],
+    id: 3,
+    order: 'Заказ №28496',
+    status: 'Отменен',
+  },
+  {
+    data: 'от 23.06.2021',
+    details: [],
+    id: 4,
+    order: 'Заказ №08476',
+    status: 'Отменен',
+  },
+  {
+    data: 'от 03.05.2021',
+    details: [],
+    id: 5,
+    order: 'Заказ №08476',
+    status: 'Завершен',
+  },
+  {
+    data: 'от 18.04.2021',
+    details: [],
+    id: 6,
+    order: 'Заказ №08476',
+    status: 'Текущий',
+  },
+  {
+    data: 'от 11.03.2021',
+    details: [],
+    id: 7,
+    order: 'Заказ №08476',
+    status: 'Завершен',
+  },
+];

@@ -1,0 +1,20 @@
+.Wrapper {
+  margin-bottom: 7.5rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media screen and (width <= 425px) {
+
+  .Wrapper {
+    margin-bottom: 3.5rem;
+  }
+
+  .layout {
+    gap: 2.5rem;
+  }
+}

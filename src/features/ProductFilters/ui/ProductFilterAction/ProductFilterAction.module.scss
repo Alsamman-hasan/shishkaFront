@@ -1,0 +1,33 @@
+.btn{
+  width: 100%;
+}
+
+@media screen and (width <= 1024px) {
+
+ .CatalogProdPageFilter {
+    min-width: 100%;
+  }
+
+  .btnWrapper {
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (width <= 768px) {
+
+}
+
+@media screen and (width <= 425px) {
+
+  .btnWrapper {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (width <= 375px) {
+
+}
+
+@media screen and (width <= 320px) {
+
+}

@@ -1,0 +1,10 @@
+
+.tab {
+  cursor: pointer;
+}
+.active {
+  color: var(--main-color);
+  &>svg {
+    fill:var(--main-color); ;
+  }
+}

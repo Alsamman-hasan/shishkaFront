@@ -1,0 +1,37 @@
+.FirstFooter {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid #fcfcfc1a;
+}
+
+
+.item {
+  color:var(--white);
+  cursor: pointer;
+}
+
+.header {
+  color:var(--grey);
+}
+
+@media screen and (width <= 768px) {
+
+  .FirstFooter {
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items:center;
+  }
+
+  .itemsWrapper {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    display: none;
+  }
+}

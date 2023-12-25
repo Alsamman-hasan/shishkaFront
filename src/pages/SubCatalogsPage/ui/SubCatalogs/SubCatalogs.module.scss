@@ -1,0 +1,103 @@
+.SubCatalogs{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.MainCatalogsPage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 18.75rem);
+}
+
+.isLoading {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.catalog {
+  cursor: pointer;
+  height: 13.75rem;
+  width: 18.75rem;
+  padding: 3.75rem 0 0;
+  border: 1px solid var(--light-grey);
+
+  &>svg {
+    fill: var(--main-color);
+  }
+
+  &:hover {
+    color: var(--main-color);
+    background: var(--add-white);
+  }
+}
+
+.H3 {
+  text-align: center;
+}
+
+
+@media screen and (width <= 768px) {
+
+ .MainCatalogsPage {
+    // max-width: 18.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 15rem);;
+  }
+
+  .catalog {
+    height: 11.75rem;
+    width: 15rem;
+    padding: 1rem 0 0;
+  }
+
+  .H3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (width <= 425px) {
+
+  .MainCatalogsWrapper {
+    gap:1.5rem !important
+  }
+
+ .MainCatalogsPage {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 11rem);;
+  }
+
+  .catalog {
+    height: 8.75rem;
+    width: 11rem;
+    padding: 1rem 0 0;
+  }
+
+  .H3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (width <= 375px) {
+
+ .MainCatalogsPage {
+    grid-template-columns: repeat(auto-fill, 10.25rem);;
+  }
+
+  .catalog {
+    width: 10.25rem;
+  }
+
+}
+
+@media screen and (width <= 320px) {
+
+ .MainCatalogsPage {
+    grid-template-columns: repeat(auto-fill, 9.25rem);;
+  }
+
+  .catalog {
+    width: 9.25rem;
+  }
+
+}

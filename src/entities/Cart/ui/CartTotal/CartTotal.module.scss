@@ -1,0 +1,29 @@
+.CartTotal {
+  width: 23rem;
+  min-height: 17.875rem;
+  padding: 1.5rem;
+  border: 1px solid var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--light-grey) ;
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.darkGrey {
+  color: var(--dark-grey);
+}
+
+@media screen and (width <= 768px) {
+
+  .CartTotal {
+    width: 100%;
+  }
+}

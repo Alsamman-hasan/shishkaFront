@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1vw;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5vw;
+  text-rendering: optimizelegibility;
+}
+
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--dark-grey );
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track{
+  width: 0 !important;
+  background: #D7D7D7;
+}
+
+@media (max-width: 1599px) {
+  html {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: 0;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -0.125rem;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  body {
+    overflow: overlay;
+  }
+}
