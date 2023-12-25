@@ -21,7 +21,7 @@ export default (env: BuildEnv) => {
   const mode = env.mode || 'development';
   const isDev = mode === 'development';
   // const apiUrl = env.apiUrl || 'https://api.шишкамаркет.рф/front/';
-  const apiUrl = env.apiUrl || 'http://localhost:4000/front';
+  const apiUrl = env.apiUrl || 'http://94.26.249.184:8000/front';
   const PORT = env.port || 3000;
   const publicUrl = env.publicUrl || `http://localhost:${PORT}`;
 
