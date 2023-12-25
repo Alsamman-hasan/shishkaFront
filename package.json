@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "dev": "webpack serve --env port=3000 apiUrl=http://localhost:4000/front",
+    "dev": "webpack serve --env port=3000 apiUrl=http://94.26.249.184:8000/front",
     "dev:vite": "vite",
     "build:prod": "webpack  --env mode=production apiUrl=https://api.шишкамаркет.рф/front publicUrl=https://шишкамаркет.рф",
     "build:dev": "webpack  --env mode=development",
