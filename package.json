@@ -10,9 +10,9 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "dev": "webpack serve --env port=3000 apiUrl=http://94.26.249.184:8000/front",
+    "dev": "webpack serve --env port=3000 apiUrl=http://94.26.249.184:5000/front",
     "dev:vite": "vite",
-    "build:prod": "webpack  --env mode=production apiUrl=http://94.26.249.184:8000/front publicUrl=https://main--shishka-market.netlify.app/",
+    "build:prod": "webpack  --env mode=production apiUrl=http://94.26.249.184:5000/front publicUrl=https://shishka-market.netlify.app/",
     "build:dev": "webpack  --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\" ",
     "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
